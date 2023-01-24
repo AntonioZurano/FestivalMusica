@@ -1,4 +1,5 @@
-$rojo: red;
+@use 'base/variables';
+@use 'contenido/contenido';
 
 body {
     background-color: $rojo;
