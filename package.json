@@ -4,7 +4,9 @@
   "description": "Proyecto con Gulp, SASS y HTML",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp tarea",
+    "css" : "gulp css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/azuranob/Festival-de-Musica/issues"
   },
-  "homepage": "https://github.com/azuranob/Festival-de-Musica#readme"
+  "homepage": "https://github.com/azuranob/Festival-de-Musica#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
+  }
 }
