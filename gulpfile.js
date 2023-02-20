@@ -5,7 +5,7 @@ const plumber = require('gulp-plumber');
 
 function css(done) {
 
-    src('src/scss/**/*.scss')// Identificar el archivo de SASS
+    src('src/scss/**/*.scss')// Identificar el archivo de SASS (todos los archivos SASS)
         .pipe( plumber())
         .pipe( sass() ) // Compilarlo
         .pipe ( dest("build/css")) // Almacenarla en el disco duro
@@ -15,7 +15,6 @@ function css(done) {
 
 function dev(done) {
     watch("src/scss/**/*.scss", css);
-
     done();
 }
 exports.css = css;
